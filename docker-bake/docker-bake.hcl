@@ -17,7 +17,7 @@ variable "APP_NAME" {
 }
 
 target "build" {
-    context = "https://${GITHUB_RO_TOKEN}@github.com/c-ameron/docker-rails-example-app.git"
+    context = "https://${GITHUB_RO_TOKEN}@github.com/c-ameron/docker-bake-rails-example.git"
     contexts = {
         local = BAKE_CMD_CONTEXT # use the local path instead of the cloned repo for copying
     }
@@ -29,7 +29,7 @@ target "build" {
 }
 
 target "runtime" {
-    context = "https://${GITHUB_RO_TOKEN}@github.com/c-ameron/docker-rails-example-app.git"
+    context = "https://${GITHUB_RO_TOKEN}@github.com/c-ameron/docker-bake-rails-example.git"
     contexts = {
         build = "target:build"
         local = BAKE_CMD_CONTEXT
