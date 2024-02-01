@@ -1,0 +1,4 @@
+build-base
+git
+postgresql-dev
+libc6-compat
