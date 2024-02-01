@@ -1,4 +1,4 @@
-FROM base-runtime-ruby
+FROM base-ruby-runtime
 
 USER root
 ARG APP_NAME

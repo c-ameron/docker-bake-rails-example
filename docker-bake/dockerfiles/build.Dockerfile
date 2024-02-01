@@ -1,5 +1,5 @@
 # This isn't built as a base image, but instead sourced as additional build instructions in docker-bake.hcl
-FROM base-build-ruby
+FROM base-ruby-build
 
 ARG BUNDLE_WITHOUT="development:test"
 ENV BUNDLE_WITHOUT=$BUNDLE_WITHOUT
